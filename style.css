@@ -1,0 +1,140 @@
+@font-face {
+    font-family: 'Figtree' , sans-serif;
+    font-display: swap;
+    font-weight: 600 800;
+    src: url(./assets/fonts/Figtree-VariableFont_wght.ttf)
+         format('truetype');
+}
+
+:root {
+    --Yellow: hsl(47, 88%, 63%);
+    --White: hsl(0, 0%, 100%);
+    --Grey: hsl(0, 0%, 50%);
+    --Black: hsl(0, 0%, 7%);
+}
+
+*,
+*::before,
+*::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Figtree' , sans-serif;
+}
+
+main {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: var(--Yellow);
+    gap: 2rem;
+}
+
+.card {
+    width: 300px;
+    height: 450px;
+    background: var(--White);
+    padding: 1rem;
+    border-radius: 20px;
+    border: 2px solid var(--Black);
+    box-shadow: 5px 4px 0px 1px  var(--Black);
+    overflow: hidden;
+    font-size: .875rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+}
+
+.card:hover{
+    box-shadow: 8px 4px 0px px  var(--Black);
+}
+
+
+.card > .card__bg > img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.top {
+    display: flex;
+    flex-direction: column;justify-content: center;
+    gap: .3rem;
+    margin-bottom: 1rem;
+}
+
+.top  > .lean {
+    display: block;
+    width: 80px;
+    background: var(--Yellow);
+    padding: 3px 4px;
+    font-weight: 600;
+    border-radius: 4px;
+}
+
+.top > .day {
+    color: var(--Grey);
+}
+
+
+.head {
+    font-size: 1.25rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    transition: all .3s ease-in-out;
+}
+
+.head:hover{
+    color: var(--Yellow);
+}
+
+p.desc{
+    color: var(--Grey);
+    font-size: .875rem;
+    line-height: 1.5;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap:1rem;
+    margin-top: 1rem;
+}
+
+.profile > .profile__img > img{
+    width: 40px;
+}
+
+.profile > span {
+    font-weight: 900;
+}
+
+
+
+
+
+
+
+.attribution { 
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    font-size: 1rem; 
+    text-align: center; 
+    background: var(--White);
+    color: var(--Yellow);
+    padding-block: .625rem;
+    font-weight: 800;
+}
+
+.attribution a { 
+    color: hsl(0, 33%, 1%); 
+    text-decoration: none;
+}
+.attribution a:hover {
+    color: red;                     
+}
